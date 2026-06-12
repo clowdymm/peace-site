@@ -28,7 +28,7 @@ function PeaceFacts() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,0.9fr) minmax(0,1.1fr)', gap: '56px', alignItems: 'center' }} className="peace-facts-grid">
           <div style={{ position: 'relative', aspectRatio: '5 / 6', width: '100%' }}>
-            <img src="facts-image.png" alt="The Commemorative Edition" style={{
+            <img src="facts-image.png" alt="Commemorative portrait of President Trump" style={{
               width: '100%', height: '100%', objectFit: 'cover', display: 'block',
               border: '1px solid var(--border-gold)', boxShadow: 'var(--shadow-md)',
             }} />

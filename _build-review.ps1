@@ -18,6 +18,7 @@ $imgMap = @{
   'keepsake-logo.png'      = DataUri 'keepsake-logo.png' 'image/png'
   'assets/peace-seal.svg'  = DataUri 'assets/peace-seal.svg' 'image/svg+xml'
 }
+$favicon = DataUri 'favicon.jpg' 'image/jpeg'
 
 $jsxFiles = 'Parts.jsx','Header.jsx','Hero.jsx','PeaceFacts.jsx','Terms.jsx','Steps.jsx',
             'Scoreboard.jsx','Collectible.jsx','Community.jsx','Dispatch.jsx'
@@ -97,6 +98,8 @@ $head = @'
     .peace-footer-grid { grid-template-columns: 1fr 1fr !important; }
   }
 '@
+
+$head = $head.Replace('</title>', "</title>`n<link rel=`"icon`" type=`"image/jpeg`" href=`"$favicon`" />")
 
 $html = $head + "`n" + $css + "`n</style>`n" +
         "<script>`n" + $bundle + "`n</script>`n" +

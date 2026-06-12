@@ -2,7 +2,7 @@
 (() => {
 /* 👉 THE $PEACE CONTRACT ADDRESS — replace this ONE value with the real Solana mint address.
    It powers the CA field in both the "How to Buy" section and the Keepsake. */
-window.PEACE_CA = 'PEACE7n4Wq2sK9dXyZ1aGhT6bV3cR8mJ5pL0eF4uN2oP';
+window.PEACE_CA = '5g4ApM9Stbav4naiV5nnWrFgKh1v6UcNSwx22TkpMnaJ';
 
 const { Seal } = window.PeaceDesignSystem_adb1e5;
 

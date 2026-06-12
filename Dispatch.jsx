@@ -40,15 +40,6 @@ function Dispatch() {
   );
 }
 
-function SocialLink({ label, children }) {
-  return (
-    <a href="#" onClick={(e) => e.preventDefault()} aria-label={label} style={{
-      width: '38px', height: '38px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-      border: '1px solid rgba(214,188,132,0.35)', borderRadius: 'var(--radius-sm)', color: 'var(--gold-400)',
-    }}>{children}</a>
-  );
-}
-
 function Footer({ onNav }) {
   const cols = [
     ['The Peace', [['accord', 'The Moment'], ['about', 'Peace Facts'], ['terms', 'Token Info']]],
@@ -67,14 +58,6 @@ function Footer({ onNav }) {
                 <div style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '10px', letterSpacing: '0.32em', color: 'var(--gold-400)', marginTop: '4px' }}>AND STILL WINNING</div>
               </div>
             </div>
-            <div style={{ display: 'flex', gap: '10px' }}>
-              <SocialLink label="X">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.3 8.3L23 22h-6.6l-5-6.6L5.7 22H2.5l7.8-8.9L1.5 2h6.8l4.5 6 5.1-6Zm-1.2 18h1.8L7.2 3.9H5.3L17.7 20Z" /></svg>
-              </SocialLink>
-              <SocialLink label="Dispatch">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M4 5h16v14H4z" /><path d="M4 6l8 6 8-6" /></svg>
-              </SocialLink>
-            </div>
           </div>
           {cols.map(([title, links]) => (
             <div key={title}>
@@ -89,12 +72,16 @@ function Footer({ onNav }) {
           ))}
         </div>
         <div style={{ height: '1px', background: 'rgba(214,188,132,0.3)', margin: '48px 0 24px' }} />
-        <p style={{ fontFamily: 'var(--font-ui)', fontSize: '11.5px', lineHeight: 1.7, color: 'var(--taupe-400)', margin: '0 0 18px', maxWidth: '92ch' }}>
-          $PEACE is an expression of support for the ideals embodied by the symbol "$PEACE" and its artwork. $PEACE is not an investment opportunity, investment contract, or security of any type. See the full terms below.
-        </p>
-        <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-          <span style={{ fontFamily: 'var(--font-ui)', fontSize: '12px', color: 'var(--taupe-400)' }}>© MMXXVI — The Peace Community. All rights reserved.</span>
-          <span style={{ fontFamily: 'var(--font-ui)', fontSize: '12px', color: 'var(--taupe-400)' }}>Privacy · Terms & Conditions · A commemorative collectible.</span>
+        <div style={{ fontFamily: 'var(--font-ui)', fontSize: '11.5px', lineHeight: 1.7, color: 'var(--taupe-400)', maxWidth: '92ch' }}>
+          <p style={{ margin: '0 0 14px' }}>
+            Peace Memes are intended to function as an expression of support for, and engagement with, the ideals and beliefs embodied by the symbol "$PEACE" and the associated artwork, and are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. MemesForPeace.com is not political and has nothing to do with any political campaign or any political office or governmental agency.
+          </p>
+          <p style={{ margin: '0 0 14px' }}>
+            "TRUMP" is a registered trademarks of DTTM Operations LLC. This product is not distributed or sold by Donald J. Trump, The Trump Organization or any of their respective affiliates or principals.
+          </p>
+          <p style={{ margin: 0 }}>
+            CIC Digital LLC will never call, text, email or otherwise contact you to request your personal information. Please be careful.
+          </p>
         </div>
       </div>
     </footer>

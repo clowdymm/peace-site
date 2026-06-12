@@ -8,7 +8,7 @@ function Enc($s) { $s.Replace('&','&amp;').Replace('<','&lt;').Replace('>','&gt;
 
 $body = New-Object System.Text.StringBuilder
 foreach ($raw in $lines) {
-  $line = $raw.Trim()
+  $line = $raw.Trim().Replace('CIC VENTURES LLC', 'CIC DIGITAL LLC')
   if ($line.Length -eq 0) { continue }
   $hasLower = $line -cmatch '[a-z]'
   $isHeader = (-not $hasLower) -and ($line -notmatch '\.') -and ($line.Length -lt 70)
@@ -26,6 +26,7 @@ $head = @'
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Terms &amp; Conditions &mdash; $PEACE</title>
+<link rel="icon" type="image/jpeg" href="favicon.jpg" />
 <link rel="stylesheet" href="styles.css" />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Archivo+Black&display=swap');
