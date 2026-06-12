@@ -35,7 +35,6 @@ function Hero({ onNav }) {
           </p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '40px' }}>
             <Button variant="gold" size="lg" onClick={() => onNav('join')}>Get Your $PEACE Now</Button>
-            <Button variant="secondary" size="lg" onClick={() => onNav('community')}>Celebrate With Us</Button>
           </div>
           <div style={{ display: 'flex', gap: '22px', flexWrap: 'wrap' }}>
             <Chip k="Sides Taken" v="0" />
