@@ -1,0 +1,76 @@
+/* ============================================================
+   PEACE — Color tokens
+   A warm, ceremonial palette: parchment paper, taupe stone,
+   victory gold, warm ink, deep bronze for inverse panels.
+   Laurel (olive) and seal-red appear only as sparing signals.
+   No bright, cool, or neon hues. No purple/blue gradients.
+   ============================================================ */
+
+:root {
+  /* ---- Parchment (primary surfaces — the paper) ---- */
+  --parchment-50:  #F5F3ED;
+  --parchment-100: #EFEDE6;
+  --parchment-200: #E6E4DE;   /* PAGE — brand primary #E6E4DE */
+  --parchment-300: #DAD6CB;
+  --parchment-400: #C8C1B0;
+
+  /* ---- Taupe (secondary) ---- */
+  --taupe-200: #D2C8B4;
+  --taupe-300: #BEB096;
+  --taupe-400: #A6967C;       /* SECONDARY — brand #A6967C */
+  --taupe-500: #897A60;
+  --taupe-600: #6E614B;
+
+  /* ---- Victory gold (ceremonial accent) ---- */
+  --gold-300: #D4BC84;
+  --gold-400: #C2A35E;
+  --gold-500: #AD8A47;        /* seal gold */
+  --gold-600: #8F7036;
+
+  /* ---- Ink (warm near-black — proclamation text) ---- */
+  --ink-900: #232128;
+  --ink-700: #3B3942;
+  --ink-500: #5C5963;
+  --ink-300: #8A8791;
+
+  /* ---- Bronze (inverse panels, primary buttons) ---- */
+  --bronze-900: #1F1B14;
+  --bronze-800: #2A2417;
+  --bronze-700: #3B3325;
+
+  /* ---- Signals (sparing use only) ---- */
+  --laurel-500: #5E6B43;      /* affirm / do */
+  --laurel-600: #4C5836;
+  --seal-red-500: #8E3B32;    /* emphasis / don't */
+  --seal-red-600: #74302A;
+
+  /* ============================================================
+     SEMANTIC ALIASES
+     ============================================================ */
+
+  /* Surfaces */
+  --surface-page:    var(--parchment-200);
+  --surface-raised:  var(--parchment-100);
+  --surface-card:    var(--parchment-50);
+  --surface-sunken:  var(--parchment-300);
+  --surface-inverse: var(--bronze-900);
+  --surface-gold:    var(--gold-500);
+
+  /* Text */
+  --text-strong:     var(--ink-900);
+  --text-body:       var(--ink-700);
+  --text-muted:      var(--ink-500);
+  --text-faint:      var(--ink-300);
+  --text-gold:       var(--gold-600);
+  --text-on-inverse: var(--parchment-100);
+  --text-on-gold:    var(--bronze-900);
+
+  /* Lines & borders */
+  --border-hairline: rgba(35, 33, 40, 0.14);
+  --border-soft:     var(--parchment-300);
+  --border-strong:   rgba(35, 33, 40, 0.28);
+  --border-gold:     rgba(173, 138, 71, 0.55);
+
+  /* Focus */
+  --focus-ring: rgba(173, 138, 71, 0.35);
+}

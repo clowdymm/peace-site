@@ -1,0 +1,43 @@
+/* ============================================================
+   PEACE — Typography tokens
+   Cinzel (Roman capitals) for display, wordmark, eyebrows,
+   signatures — almost always letterspaced, frequently gold.
+   EB Garamond for all proclamation body. Mulish for UI microcopy.
+   ============================================================ */
+
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  --font-body:    'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-ui:      'Mulish', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* ---- Weights ---- */
+  --weight-regular:  400;                  /* @kind font */
+  --weight-medium:   500;                  /* @kind font */
+  --weight-semibold: 600;                  /* @kind font */
+  --weight-bold:     700;                  /* @kind font */
+
+  /* ---- Type scale (proclamation rhythm) ---- */
+  --text-xs:   12px;                        /* @kind font */
+  --text-sm:   14px;                        /* @kind font */
+  --text-base: 17px;                        /* @kind font */
+  --text-lg:   26px;                        /* @kind font */
+  --text-xl:   36px;                        /* @kind font */
+  --text-2xl:  48px;                        /* @kind font */
+  --text-3xl:  64px;                        /* @kind font */
+  --text-4xl:  88px;                        /* @kind font */
+
+  /* ---- Line heights ---- */
+  --leading-tight:   1.05;                  /* @kind other */
+  --leading-snug:    1.2;                   /* @kind other */
+  --leading-normal:  1.45;                  /* @kind other */
+  --leading-relaxed: 1.6;                   /* @kind other */
+  --leading-body:    1.62;                  /* @kind other */
+
+  /* ---- Tracking ---- */
+  --tracking-tight:    -0.01em;             /* @kind other */
+  --tracking-normal:    0.02em;             /* @kind other */
+  --tracking-label:     0.20em;             /* @kind other */
+  --tracking-wordmark:  0.16em;             /* @kind other */
+  --tracking-eyebrow:   0.32em;             /* @kind other */
+}

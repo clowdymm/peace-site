@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" role="img" aria-label="Peace ceremonial seal">
+  <defs>
+    <path id="seal-arc-top" d="M24,100 A76,76 0 0 1 176,100"></path>
+    <path id="seal-arc-bottom" d="M170,100 A70,70 0 0 1 30,100"></path>
+  </defs>
+  <g stroke="#AD8A47" fill="none">
+    <circle cx="100" cy="100" r="95" stroke-width="1.5"></circle>
+    <circle cx="100" cy="100" r="89" stroke-width="0.75"></circle>
+    <circle cx="100" cy="100" r="60" stroke-width="1.5"></circle>
+    <circle cx="100" cy="100" r="64" stroke-width="0.75"></circle>
+  </g>
+  
+  <path fill="#AD8A47" d="M100,72 L104.7,85.5 L119.0,85.8 L107.6,94.5 L111.8,108.2 L100,100 L88.2,108.2 L92.4,94.5 L81.0,85.8 L95.3,85.5 Z"></path>
+  
+  <g fill="#8F7036" font-family="Cinzel, Georgia, serif" font-weight="600">
+    <text font-size="14" letter-spacing="3" text-anchor="middle">
+      <textPath href="#seal-arc-top" startOffset="50%">WORLD PEACE</textPath>
+    </text>
+    <text font-size="10" letter-spacing="3" text-anchor="middle">
+      <textPath href="#seal-arc-bottom" startOffset="50%">AND STILL WINNING</textPath>
+    </text>
+  </g>
+  
+  <g fill="#AD8A47">
+    <path d="M24,100 l1.6,3.4 l3.7,0.4 l-2.8,2.5 l0.8,3.6 l-3.3,-1.9 l-3.3,1.9 l0.8,-3.6 l-2.8,-2.5 l3.7,-0.4 Z" transform="translate(-1,-3)"></path>
+    <path d="M176,100 l1.6,3.4 l3.7,0.4 l-2.8,2.5 l0.8,3.6 l-3.3,-1.9 l-3.3,1.9 l0.8,-3.6 l-2.8,-2.5 l3.7,-0.4 Z" transform="translate(-3,-3)"></path>
+  </g>
+  <text x="100" y="124" fill="#8F7036" font-family="Cinzel, Georgia, serif" font-weight="600" font-size="8" letter-spacing="2.5" text-anchor="middle">MMXXVI</text>
+</svg>

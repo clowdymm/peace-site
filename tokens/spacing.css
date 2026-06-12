@@ -1,0 +1,44 @@
+/* ============================================================
+   PEACE — Spacing, radii, elevation, motion, layout
+   Monumental generosity; squared corners; soft, warm, low
+   shadows; dignified, never-bouncing motion.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ---- Radii (essentially square) ---- */
+  --radius-none: 0;
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+  --radius-pill: 999px;
+
+  /* ---- Elevation (warm, soft, low, rare) ---- */
+  --shadow-xs: 0 1px 2px rgba(31, 27, 20, 0.06);
+  --shadow-sm: 0 2px 8px rgba(31, 27, 20, 0.08);
+  --shadow-md: 0 8px 24px rgba(31, 27, 20, 0.10);
+  --shadow-lg: 0 20px 50px rgba(31, 27, 20, 0.16);
+
+  /* ---- Layout containers ---- */
+  --container:         1200px;
+  --container-narrow:  820px;
+  --container-content: 1040px;
+
+  /* ---- Motion ---- */
+  --dur-fast: 140ms;                         /* @kind other */
+  --dur-base: 240ms;                         /* @kind other */
+  --dur-slow: 420ms;                         /* @kind other */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);   /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);  /* @kind other */
+}
