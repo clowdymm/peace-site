@@ -61,7 +61,7 @@ function Footer({ onNav }) {
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.4fr) repeat(3, minmax(0,1fr))', gap: '40px' }} className="peace-footer-grid">
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
-              <Seal size={60} color="var(--gold-400)" deep="var(--gold-400)" />
+              <Seal size={60} year="" color="var(--gold-400)" deep="var(--gold-400)" />
               <div>
                 <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '26px', letterSpacing: '0.16em', color: 'var(--parchment-100)' }}>PEACE</div>
                 <div style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '10px', letterSpacing: '0.32em', color: 'var(--gold-400)', marginTop: '4px' }}>AND STILL WINNING</div>
@@ -93,7 +93,7 @@ function Footer({ onNav }) {
           The Peace coin is intended to function as an expression of support for, and engagement with, the ideals and beliefs embodied by the symbol "$PEACE" and the associated artwork, and are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. [insert website] is not political and has nothing to do with any political campaign or any political office or governmental agency. See Terms & Conditions Here. We will never call, text, or email to request your personal information — please be careful.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-          <span style={{ fontFamily: 'var(--font-ui)', fontSize: '12px', color: 'var(--taupe-400)' }}>© MMXXVI — The Peace Community. All rights reserved.</span>
+          <span style={{ fontFamily: 'var(--font-ui)', fontSize: '12px', color: 'var(--taupe-400)' }}>© The Peace Community. All rights reserved.</span>
           <span style={{ fontFamily: 'var(--font-ui)', fontSize: '12px', color: 'var(--taupe-400)' }}>Privacy · Terms & Conditions · A commemorative collectible.</span>
         </div>
       </div>

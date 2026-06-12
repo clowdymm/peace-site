@@ -38,7 +38,6 @@ function Hero({ onNav }) {
             <Button variant="secondary" size="lg" onClick={() => onNav('community')}>Celebrate With Us</Button>
           </div>
           <div style={{ display: 'flex', gap: '22px', flexWrap: 'wrap' }}>
-            <Chip k="Declared" v="MMXXVI" />
             <Chip k="Sides Taken" v="0" />
             <Chip k="Tradeable" v="Now" />
           </div>
