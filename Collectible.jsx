@@ -89,7 +89,7 @@ function Keepsake() {
 }
 
 function Collectible() {
-  const ADDRESS = 'PEACE7n4Wq2sK9dXyZ1aGhT6bV3cR8mJ5pL0eF4uN2oP'; // placeholder — replace with the real contract address
+  const ADDRESS = window.PEACE_CA; // shared address — set it in Parts.jsx
   const [copied, setCopied] = React.useState(false);
   const fieldRef = React.useRef(null);
 

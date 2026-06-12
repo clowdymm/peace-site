@@ -1,5 +1,9 @@
 /* PEACE site — shared parts: ceremonial placeholder, top ticker, medallion marquee */
 (() => {
+/* 👉 THE $PEACE CONTRACT ADDRESS — replace this ONE value with the real Solana mint address.
+   It powers the CA field in both the "How to Buy" section and the Keepsake. */
+window.PEACE_CA = 'PEACE7n4Wq2sK9dXyZ1aGhT6bV3cR8mJ5pL0eF4uN2oP';
+
 const { Seal } = window.PeaceDesignSystem_adb1e5;
 
 /* A warm, on-brand image placeholder: parchment panel, gold frame,
