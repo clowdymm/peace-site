@@ -25,7 +25,7 @@ $head = @'
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms &amp; Conditions &mdash; $PEACE</title>
+<title>Terms &amp; Conditions &mdash; The Official Peace Meme</title>
 <link rel="icon" type="image/jpeg" href="favicon.jpg" />
 <link rel="stylesheet" href="styles.css" />
 <style>
