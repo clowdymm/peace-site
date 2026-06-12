@@ -34,7 +34,7 @@ $app = @'
   const {
     TopTicker, MedallionMarquee, Header, Hero, AccordBand,
     PeaceFacts, Terms, Steps, Scoreboard, QuoteBand,
-    CommunityBanner, Faq, Dispatch, Footer, Collectible,
+    CommunityBanner, TermsCta, Dispatch, Footer, Collectible,
   } = window.PeaceSite;
   function App() {
     const [active, setActive] = React.useState('top');
@@ -59,7 +59,7 @@ $app = @'
         <Collectible />
         <Dispatch />
         <CommunityBanner onNav={onNav} />
-        <Faq />
+        <TermsCta />
         <Footer onNav={onNav} />
       </>
     );

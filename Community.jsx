@@ -23,52 +23,20 @@ function CommunityBanner({ onNav }) {
   );
 }
 
-function FaqItem({ q, a, open, onToggle }) {
+function TermsCta() {
   return (
-    <div style={{ borderBottom: '1px solid var(--border-hairline)' }}>
-      <button type="button" onClick={onToggle} style={{
-        width: '100%', background: 'transparent', border: 'none', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px',
-        padding: '24px 4px', textAlign: 'left',
-      }}>
-        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: 'clamp(17px,2vw,21px)', letterSpacing: '0.01em', color: 'var(--ink-900)' }}>{q}</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-600)" strokeWidth="2" aria-hidden="true"
-             style={{ flex: '0 0 auto', transition: 'transform var(--dur-base) var(--ease-standard)', transform: open ? 'rotate(180deg)' : 'rotate(0)' }}>
-          <path d="M6 9 L12 15 L18 9" />
-        </svg>
-      </button>
-      <div style={{ maxHeight: open ? '260px' : '0', overflow: 'hidden', transition: 'max-height var(--dur-base) var(--ease-standard)' }}>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '17px', lineHeight: 1.6, color: 'var(--text-muted)', margin: '0 4px 24px', maxWidth: '60ch' }}>{a}</p>
-      </div>
-    </div>
-  );
-}
-
-function Faq() {
-  const [open, setOpen] = React.useState(0);
-  const items = [
-    { q: 'What is $PEACE?', a: 'A commemorative digital coin marking the day the war ended. An expression of celebration — a keepsake of the moment, for everyone.' },
-    { q: 'Is $PEACE political?', a: 'No. $PEACE takes no side and backs no party, campaign, office, or agency. It commemorates a moment that belongs to all of humanity.' },
-    { q: 'Is $PEACE an investment?', a: 'No. $PEACE is an expression of support for the ideals embodied by the symbol "$PEACE" and its artwork — not an investment opportunity, investment contract, or security of any kind.' },
-    { q: 'Where can I get it?', a: '$PEACE is freely tradeable on the blockchain. Create a wallet, fund it, and swap — see How to Buy above. It takes minutes.' },
-    { q: 'How will I be contacted?', a: 'Only through the dispatch you choose to join. We will never call, text, or email to request your personal information. Please be careful.' },
-  ];
-  return (
-    <section id="faqs" style={{ padding: '96px 32px' }}>
-      <div style={{ maxWidth: 'var(--container-narrow)', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: '44px' }}>
-          <Eyebrow rules align="center" style={{ maxWidth: '300px', margin: '0 auto 16px' }}>Questions</Eyebrow>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(28px,4vw,48px)', letterSpacing: '0.01em', color: 'var(--ink-900)', margin: 0 }}>Frequently Asked Questions</h2>
-        </div>
-        <div style={{ borderTop: '1px solid var(--border-hairline)' }}>
-          {items.map((it, i) => (
-            <FaqItem key={i} q={it.q} a={it.a} open={open === i} onToggle={() => setOpen(open === i ? -1 : i)} />
-          ))}
-        </div>
+    <section id="legal" style={{ padding: '96px 32px' }}>
+      <div style={{ maxWidth: 'var(--container-narrow)', margin: '0 auto', textAlign: 'center' }}>
+        <Eyebrow rules align="center" style={{ maxWidth: '300px', margin: '0 auto 16px' }}>The Fine Print</Eyebrow>
+        <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(28px,4vw,48px)', letterSpacing: '0.01em', color: 'var(--ink-900)', margin: '0 0 18px' }}>Terms &amp; Conditions</h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', lineHeight: 1.6, color: 'var(--text-body)', margin: '0 auto 32px', maxWidth: '52ch' }}>
+          Before taking part, please review the full Terms &amp; Conditions governing $PEACE and this site.
+        </p>
+        <Button variant="gold" size="lg" onClick={() => { window.location.href = 'terms.html'; }}>Read the Terms &amp; Conditions</Button>
       </div>
     </section>
   );
 }
 
-window.PeaceSite = Object.assign(window.PeaceSite || {}, { CommunityBanner, Faq });
+window.PeaceSite = Object.assign(window.PeaceSite || {}, { CommunityBanner, TermsCta });
 })();

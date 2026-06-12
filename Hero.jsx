@@ -20,7 +20,7 @@ function Hero({ onNav }) {
         gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: '56px', alignItems: 'center',
       }} className="peace-hero-grid">
         <div>
-          <div style={{ marginBottom: '22px' }}><Badge tone="gold" style={{ whiteSpace: 'nowrap' }}>At Long Last</Badge></div>
+          <div style={{ marginBottom: '22px' }}><Badge tone="gold" style={{ whiteSpace: 'nowrap' }}>Thanks to Trump</Badge></div>
           <h1 style={{
             fontFamily: 'var(--font-display)', fontWeight: 700,
             fontSize: 'clamp(40px, 5.6vw, 70px)', lineHeight: 1.04, letterSpacing: '0.02em',

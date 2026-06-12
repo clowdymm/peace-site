@@ -53,7 +53,7 @@ function Footer({ onNav }) {
   const cols = [
     ['The Peace', [['accord', 'The Moment'], ['about', 'Peace Facts'], ['terms', 'Token Info']]],
     ['Take Part', [['join', 'How to Buy'], ['collectible', 'Collectible'], ['dispatch', 'Dispatch']]],
-    ['More', [['faqs', 'FAQ'], ['scoreboard', 'Scoreboard'], ['top', 'Home']]],
+    ['More', [['legal', 'Terms'], ['scoreboard', 'Scoreboard'], ['top', 'Home']]],
   ];
   return (
     <footer style={{ background: 'var(--surface-inverse)', padding: '72px 32px 40px', color: 'var(--parchment-200)' }}>
@@ -90,7 +90,7 @@ function Footer({ onNav }) {
         </div>
         <div style={{ height: '1px', background: 'rgba(214,188,132,0.3)', margin: '48px 0 24px' }} />
         <p style={{ fontFamily: 'var(--font-ui)', fontSize: '11.5px', lineHeight: 1.7, color: 'var(--taupe-400)', margin: '0 0 18px', maxWidth: '92ch' }}>
-          The Peace coin is intended to function as an expression of support for, and engagement with, the ideals and beliefs embodied by the symbol "$PEACE" and the associated artwork, and are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. [insert website] is not political and has nothing to do with any political campaign or any political office or governmental agency. See Terms & Conditions Here. We will never call, text, or email to request your personal information — please be careful.
+          $PEACE is an expression of support for the ideals embodied by the symbol "$PEACE" and its artwork. $PEACE is not an investment opportunity, investment contract, or security of any type. See the full terms below.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
           <span style={{ fontFamily: 'var(--font-ui)', fontSize: '12px', color: 'var(--taupe-400)' }}>© MMXXVI — The Peace Community. All rights reserved.</span>

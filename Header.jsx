@@ -8,7 +8,7 @@ function Header({ onNav, active }) {
     { id: 'about', label: 'Peace Facts' },
     { id: 'terms', label: 'The Coin' },
     { id: 'join', label: 'How to Buy' },
-    { id: 'faqs', label: 'FAQ' },
+    { id: 'legal', label: 'Terms' },
   ];
   return (
     <header style={{
